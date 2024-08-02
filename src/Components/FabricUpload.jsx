@@ -179,25 +179,25 @@ const FabricUpload = () => {
     setSelectedMap(newValue);
   };
 
-  if (loading) {
-    return (
-      <ThemeProvider theme={theme}>
-        <Box
-          sx={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            height: "100vh",
-            backgroundColor: "#fffff",
-          }}
-        >
-          <Typography variant="h5" component="h1" color="primary">
-            Envision Loading...
-          </Typography>
-        </Box>
-      </ThemeProvider>
-    );
-  }
+  // if (loading) {
+  //   return (
+  //     <ThemeProvider theme={theme}>
+  //       <Box
+  //         sx={{
+  //           display: "flex",
+  //           justifyContent: "center",
+  //           alignItems: "center",
+  //           height: "100vh",
+  //           backgroundColor: "#fffff",
+  //         }}
+  //       >
+  //         <Typography variant="h5" component="h1" color="primary">
+  //           Envision Loading...
+  //         </Typography>
+  //       </Box>
+  //     </ThemeProvider>
+  //   );
+  // }
 
   return (
     <ThemeProvider theme={theme}>
@@ -384,7 +384,7 @@ const FabricUpload = () => {
           <Typography variant="h6" component="h1" gutterBottom>
             Fabric Preview
           </Typography>
-          <FabricPreview maps={maps} />
+          {/* <FabricPreview maps={maps} /> */}
         </Box>
       </Box>
       <Snackbar
