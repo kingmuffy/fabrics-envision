@@ -12,7 +12,7 @@ import { FBXLoader } from "three/examples/jsm/loaders/FBXLoader";
 const FabricPreview = ({ maps }) => {
   // const meshRef = useRef();
   const [textures, setTextures] = useState({});
-  const model = useLoader(FBXLoader, "/src/assets/FabricTexture.fbx");
+  const model = useLoader(FBXLoader, "https://fabrics-envision.vercel.app/src/assets/FabricTexture.fbx");
 
   useEffect(() => {
     const loadTextures = async () => {
